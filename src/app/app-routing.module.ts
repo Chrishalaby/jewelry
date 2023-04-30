@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { CheckoutComponent } from './modules/cart/checkout/checkout.component';
 import { ShoppingCartComponent } from './modules/cart/shopping-cart/shopping-cart.component';
 import { ContactUSComponent } from './modules/contact-us/contact-us.component';
@@ -41,7 +40,7 @@ const routes: Routes = [
   },
   {
     path: AppRoutes.Empty,
-    component: AppComponent,
+    component: HomeComponent,
   },
   {
     path: AppRoutes.Other,
