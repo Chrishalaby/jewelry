@@ -1,0 +1,82 @@
+<section (value)="(productOverview)" class="card m-2">
+  <div class="grid mb-7">
+    <div class="col-12 lg:col-7">
+      <div class="flex">
+        <div class="flex flex-column w-2 justify-content-between">
+          <span *ngFor="let image of productOverview.image">
+            <img
+              class="w-full cursor-pointer border-2 border-transparent transition-colors transition-duration-150 border-round border-primary"
+              [src]="'assets/images/' + image"
+              (click)="swapImage(image)"
+            />
+          </span>
+        </div>
+        <div class="pl-3 w-10 flex">
+          <img
+            class="w-full border-2 border-transparent border-round"
+            [src]="'assets/images/' + mainImage"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 lg:col-4 py-3 lg:pl-6">
+      <div class="flex align-items-center text-xl font-medium text-900 mb-4">
+        {{ productOverview.name }}
+      </div>
+      <div class="flex align-items-center justify-content-between mb-5">
+        <span class="text-900 font-medium text-3xl block"
+          >${{ productOverview.attributes.price }}</span
+        >
+        <!-- <div class="flex align-items-center">
+          <p-rating [readonly]="true" [cancel]="false"></p-rating>
+          <span class="text-sm">
+            <b class="text-900 mr-1">24</b>
+            reviews
+          </span>
+        </div> -->
+      </div>
+
+      <p class="font-bold text-900 mb-3">Color</p>
+      <div class="flex align-items-center mb-5">
+        <div
+          class="color"
+          style="box-shadow: 0 0 0 0.2rem var(--bluegray-500)"
+        ></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </div>
+
+      <div class="mb-3 flex align-items-center justify-content-between">
+        <span class="font-bold text-900">Size</span>
+        <a class="cursor-pointer text-600 text-sm flex align-items-center">
+          Size Guide
+          <i class="ml-1 pi pi-angle-right"></i>
+        </a>
+      </div>
+
+      <div class="font-bold text-900 mb-3">Quantity</div>
+      <p-inputNumber
+        buttonLayout="horizontal"
+        spinnermode="horizontal"
+        inputStyleClass="w-3rem text-center"
+        decrementButtonClass="p-button-text"
+        incrementButtonClass="p-button-text"
+        incrementButtonIcon="pi pi-plus"
+        decrementButtonIcon="pi pi-minus"
+      ></p-inputNumber>
+      <div
+        class="flex flex-column sm:flex-row sm:align-items-center sm:justify-content-between"
+      >
+        <div class="flex align-items-center flex-1 mt-3 sm:mt-0 ml-0 sm:ml-5">
+          <p-button
+            label="Add to Cart"
+            class="flex-1 mr-5"
+            (onClick)="addToCart()"
+          ></p-button>
+          <i class="pi text-2xl cursor-pointer pi-heart text-600"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "type": "ring",
+      "image": ["ring1.png", "ring2.png", "ring3.png"],
+      "name": "Gold Diamond Ring",
+      "attributes": {
+        "material": "Gold",
+        "size": "7",
+        "price": 1000,
+        "description": "A beautiful gold ring with a diamond in the center.",
+        "style": "Classic",
+        "shape": "Round"
+      }
+    },
+    {
+      "id": 2,
+      "type": "ring",
+      "image": ["ring2.png"],
+      "name": "Platinum Diamond Ring",
+      "attributes": {
+        "material": "Platinum",
+        "size": "6.5",
+        "price": 2500,
+        "description": "A sleek and modern platinum band with a row of small diamonds.",
+        "style": "Modern",
+        "shape": "Square"
+      }
+    },
+    {
+      "id": 3,
+      "type": "necklace",
+      "name": "Silver Heart Necklace",
+      "image": ["ring3.png"],
+      "attributes": {
+        "material": "Silver",
+        "size": "8",
+        "price": 75,
+        "description": "A simple and affordable silver band with a heart-shaped cubic zirconia.",
+        "style": "Romantic",
+        "shape": "Round"
+      }
+    },
+    {
+      "id": 4,
+      "type": "bracelet",
+      "image": ["ring4.png"],
+      "name": "Rose Gold Opal Ring",
+      "attributes": {
+        "material": "Rose Gold",
+        "size": "7.5",
+        "price": 1500,
+        "description": "A unique rose gold ring with a marquise-shaped opal and small diamonds.",
+        "style": "Bohemian",
+        "shape": "Marquise"
+      }
+    },
+    {
+      "id": 5,
+      "type": "ring",
+      "image": ["ring5.png"],
+      "name": "White Gold Sapphire Ring",
+      "attributes": {
+        "material": "White Gold",
+        "size": "7",
+        "price": 2000,
+        "description": "A timeless white gold band with a round-cut sapphire surrounded by diamonds.",
+        "style": "Elegant",
+        "shape": "Round"
+      }
+    },
+    {
+      "id": 6,
+      "type": "ring",
+      "image": ["ring6.png"],
+      "name": "Yellow Gold Filigree Ring",
+      "attributes": {
+        "material": "Yellow Gold",
+        "size": "6",
+        "price": 500,
+        "description": "A vintage yellow gold ring with an intricate filigree design.",
+        "style": "Vintage",
+        "shape": "Oval"
+      }
+    }
+  ]
+}

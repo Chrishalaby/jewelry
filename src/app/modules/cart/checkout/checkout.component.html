@@ -1,0 +1,121 @@
+<p-card class="card">
+  <div class="grid grid-nogutter">
+    <div class="col-12 px-4 mt-4 md:mt-6 md:px-6">
+      <span class="text-900 block font-bold text-xl">Checkout</span>
+    </div>
+    <div class="col-12 h-full px-4 py-4 md:px-6">
+      <!-- <ul class="flex list-none flex-wrap p-0 mb-6">
+        <li class="flex align-items-center text-primary mr-2">
+          Cart <i class="pi pi-chevron-right text-500 text-xs ml-2"></i>
+        </li>
+        <li class="flex align-items-center text-500 mr-2">
+          Information<i class="pi pi-chevron-right text-500 text-xs ml-2"></i>
+        </li>
+        <li class="flex align-items-center text-500 mr-2">
+          Shipping<i class="pi pi-chevron-right text-500 text-xs ml-2"></i>
+        </li>
+        <li class="flex align-items-center text-500 mr-2">Payment</li>
+      </ul> -->
+      <div class="grid formgrid">
+        <div class="col-12 mb-6">
+          <span class="text-900 text-2xl block font-medium mb-5"
+            >Contact Information</span
+          >
+          <input placeholder="Email" class="p-inputtext w-full mb-4" />
+          <p-checkbox
+            label="Email me with news and offers"
+            class="p-element text-900 ng-untouched ng-pristine ng-valid"
+          >
+          </p-checkbox>
+        </div>
+        <div class="col-12 mb-4">
+          <span class="text-900 text-2xl block font-medium mb-5">Shipping</span>
+          <!-- <p-dropdown
+            placeholder="Country / City"
+            optionlabel="name"
+            styleclass="w-full"
+            class="p-element p-inputwrapper ng-untouched ng-pristine ng-valid"
+          >
+          </p-dropdown> -->
+        </div>
+        <div class="col-12 lg:col-6 field mb-4">
+          <input
+            id="lastname"
+            placeholder="Name"
+            type="text"
+            class="p-inputtext w-full"
+          />
+        </div>
+        <div class="col-12 lg:col-6 field mb-4">
+          <input
+            id="lastname"
+            placeholder="Last Name"
+            type="text"
+            class="p-inputtext w-full"
+          />
+        </div>
+
+        <div class="col-12 field mb-4">
+          <input
+            id="address"
+            placeholder="Address"
+            type="text"
+            class="p-inputtext w-full"
+          />
+        </div>
+
+        <div class="col-12 field mb-4">
+          <input
+            id="address2"
+            placeholder="Apartment, suite, etc"
+            type="text"
+            class="p-inputtext w-full"
+          />
+        </div>
+
+        <div class="col-12 lg:col-6 field mb-4">
+          <input
+            id="pc"
+            placeholder="Postal Code"
+            type="text"
+            class="p-inputtext w-full"
+          />
+        </div>
+
+        <div class="col-12 lg:col-6 field mb-4">
+          <input
+            id="city"
+            placeholder="City"
+            type="text"
+            class="p-inputtext w-full"
+          />
+        </div>
+        <!-- <div class="col-12 lg:col-6 mb-4">
+          <p-checkbox
+            label="Save for next purchase"
+            class="p-element text-900 ng-untouched ng-pristine ng-valid"
+          >
+          </p-checkbox>
+        </div> -->
+        <div
+          class="col-12 flex flex-column lg:flex-row justify-content-center align-items-center lg:justify-content-end my-6"
+        >
+          <p-button
+            label="Return to Cart"
+            icon="pi pi-fw pi-arrow-left"
+            [routerLink]="['/shopping-cart']"
+            class="p-button-secondary p-button-outlined mt-3 lg:mt-0 w-full lg:w-auto flex-order-2 lg:flex-order-1 lg:mr-4"
+          >
+          </p-button>
+
+          <p-button
+            label="Check Out"
+            icon="pi pi-fw pi-check"
+            class="p-button-primary w-full lg:w-auto flex-order-1 lg:flex-order-2"
+          >
+          </p-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</p-card>
