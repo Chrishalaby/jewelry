@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { DropdownModule } from 'primeng/dropdown';
@@ -27,7 +27,10 @@ export class ShoppingCartComponent implements OnInit {
 
   totalPrice: number = 0;
 
-  constructor(private cartService: CartService) {}
+  constructor(
+    private cartService: CartService,
+    private readonly router: Router
+  ) {}
 
   ngOnInit(): void {
     this.cart = this.cartService.getCart();
@@ -42,5 +45,9 @@ export class ShoppingCartComponent implements OnInit {
 
   getTotal(): number {
     return this.cart.reduce((acc, item) => acc + item.attributes.price, 0);
+  }
+
+  checkOut(): void {
+    this.router.navigate(['/checkout']);
   }
 }

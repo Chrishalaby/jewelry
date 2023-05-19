@@ -39,12 +39,9 @@
 
       <p class="font-bold text-900 mb-3">Color</p>
       <div class="flex align-items-center mb-5">
-        <div
-          class="color"
-          style="box-shadow: 0 0 0 0.2rem var(--bluegray-500)"
-        ></div>
-        <div class="color"></div>
-        <div class="color"></div>
+        <button class="color" style="background-color: #9c9c9c"></button>
+        <button class="color" style="background-color: #eca8b2"></button>
+        <button class="color" style="background-color: #ffdd20"></button>
       </div>
 
       <div class="mb-3 flex align-items-center justify-content-between">
@@ -55,26 +52,27 @@
         </a>
       </div>
 
-      <div class="font-bold text-900 mb-3">Quantity</div>
-      <p-inputNumber
-        buttonLayout="horizontal"
-        spinnermode="horizontal"
-        inputStyleClass="w-3rem text-center"
-        decrementButtonClass="p-button-text"
-        incrementButtonClass="p-button-text"
-        incrementButtonIcon="pi pi-plus"
-        decrementButtonIcon="pi pi-minus"
-      ></p-inputNumber>
+      <p class="font-bold text-900 mb-3">Quantity</p>
+
       <div
-        class="flex flex-column sm:flex-row sm:align-items-center sm:justify-content-between"
+        class="flex flex-column sm:flex-row sm:align-items-center sm:justify-content-between ml-5g"
       >
+        <p-inputNumber
+          buttonLayout="horizontal"
+          spinnermode="horizontal"
+          inputStyleClass="w-3rem text-center"
+          decrementButtonClass="p-button-text"
+          incrementButtonClass="p-button-text"
+          incrementButtonIcon="pi pi-plus"
+          decrementButtonIcon="pi pi-minus"
+        ></p-inputNumber>
         <div class="flex align-items-center flex-1 mt-3 sm:mt-0 ml-0 sm:ml-5">
           <p-button
             label="Add to Cart"
             class="flex-1 mr-5"
             (onClick)="addToCart()"
           ></p-button>
-          <i class="pi text-2xl cursor-pointer pi-heart text-600"></i>
+          <!-- <i class="pi text-2xl cursor-pointer pi-heart text-600"></i> -->
         </div>
       </div>
     </div>
